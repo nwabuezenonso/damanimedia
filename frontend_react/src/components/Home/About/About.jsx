@@ -4,25 +4,28 @@ import { SubHeading } from '../../../miniComponent';
 import { images } from '../../../constant';
 import './About.css';
 
+import { RiDoubleQuotesL } from 'react-icons/ri'
+
 const Chef = () => (
   <div className="app__bg app__wrapper section__padding">
-    <div className="app__wrapper_img app__wrapper_img-reverse">
-      <img src={images.header11} alt="chef_image" />
-    </div>
     <div className="app__wrapper_info">
-      <h1 className="headtext__cormorant">What we believe in</h1>
-      <SubHeading title="Chef's word" />
-
+      <h1 className="headtext__cormorant">About</h1>
+      <SubHeading title="" />
       <div className="app__chef-content">
         <div className="app__chef-content_quote">
-          <p className="p__opensans" style={{color: '#030303'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit auctor sit .</p>
+          <RiDoubleQuotesL  style={{fontSize:"50px"}}/>
+          <p className="p__opensans" style={{color: "#000"}}>Based in Nigeria, Available Worldwide</p>
         </div>
-        <p className="p__opensans" style={{color: '#030303'}}> auctor sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit. Nulla scelerisque scelerisque congue ac consequat, aliquam molestie lectus eu. Congue iaculis integer curabitur semper sit nunc. </p>
+        <p className="p__opensans" style={{width: "100%", color: "#000"}}>Damani’s Media is a team of photographers, who push the boundaries by changing the way Nigerian weddings have traditionally been photographed. By doing so, we create images that stand out in today’s highly competitive wedding market. Ultimately, our goal is to craft beautiful images that are just as unique as the people in the photographs.</p>
+        <button type="button" className="custom__button">Learn More</button>
       </div>
 
       <div className="app__chef-sign">
-        <img src="" alt="damani logo" />
+        <img src={images.logo} alt="sign_image" />
       </div>
+    </div>
+    <div className="app__wrapper_img app__wrapper_img-reverse">
+      <img src={images.header05} alt="chef_image" />
     </div>
   </div>
 );

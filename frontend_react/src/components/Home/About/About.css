@@ -2,13 +2,21 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-
-    margin-top: 5rem;
+    flex: 1;
+    margin-top: 2rem;
 }
+
 
 .app__chef-content_quote {
     display: flex;
     justify-content: flex-start;
+    flex: 1;
+    align-items: flex-end;
+}
+
+.app__chef-content p {
+    justify-content: flex-start;
+    flex: 1;
     align-items: flex-end;
 }
 
@@ -47,5 +55,13 @@
 @media screen and (max-width: 450px) {
     .app__chef-sign img {
         width: 80%;
+    }
+
+    .app__chef-content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    
+        margin-top: 5rem;
     }
 }

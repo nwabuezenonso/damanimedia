@@ -8,6 +8,8 @@ import header09 from '../assets/header09.jpg';
 import header11 from '../assets/heading11.jpg';
 import quote from '../assets/quote.png';
 
+import about from '../assets/About.jpg'
+
 
 import logo from '../assets/logo.png'
 import logowhite from '../assets/logowhite.png'
@@ -24,7 +26,8 @@ const imgassets = {
     header11,
     logo,
     logowhite,
-    quote
+    quote,
+    about
 }
 
 export default imgassets
