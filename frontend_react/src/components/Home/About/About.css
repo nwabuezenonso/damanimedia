@@ -46,9 +46,40 @@
     margin-top: 3rem;
 }
 
+.brands h1{
+    margin-left: 5rem;
+}
+
+.app__testimonial-brands {
+    flex-wrap: wrap;
+    margin-top: 2rem;
+} 
+
+.app__testimonial-brands div {
+    width: 170px;
+    margin: 1.5rem;
+}
+
+.app__testimonial-brands div img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    filter: grayscale(1);
+} 
+
+.app__testimonial-brands div img:hover {
+ filter: grayscale(0);
+} 
+
+
 @media screen and (min-width: 2000px) {
     .app__chef-sign img {
         width: 370px;
+    }
+
+    .app__testimonial-brands div {
+        width: 210px;
+        margin: 2rem;
     }
 }
 
@@ -64,4 +95,16 @@
     
         margin-top: 5rem;
     }
+
+    .app__testimonial-brands div {
+        width: 120px;
+        margin: 1rem;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    .app__testimonial-brands {
+        width: 100%;
+    } 
 }
