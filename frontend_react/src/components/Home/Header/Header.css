@@ -1,4 +1,4 @@
-#image{
+#header{
     background: url('../../../assets/header04.jpg');
     height: 100vh;
     background-size: cover;
@@ -10,14 +10,14 @@
     background-color: var(--color-black);
 }
 
- .app__header-h1 {
+.app__header-h1 {
     font-family: var(--font-base);
     color: var(--black-color);
     font-weight: 700;
     letter-spacing: 0.03em;
     text-transform: capitalize;
     line-height: 62px;
-    font-size: 52px;
+    font-size: 45px;
 }
 
 /*

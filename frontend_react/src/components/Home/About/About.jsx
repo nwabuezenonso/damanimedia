@@ -1,22 +1,11 @@
-import React, { useState, useEffect} from 'react';
+import React from 'react';
 
 import { images } from '../../../constant';
 import './About.css';
 import { RiDoubleQuotesL } from 'react-icons/ri'
-
-import { motion } from 'framer-motion';
-import { urlFor, client } from '../../../client';
+import { AppWrap, MotionWrap } from '../../../wrapper';
 
 const About = () => {
-  const [brands, setBrands] = useState([]); // set testimonials
-
-  useEffect(() => {
-    const brandsQuery = '*[_type == "featureds"]';
-
-    client.fetch(brandsQuery).then((data) => {
-      setBrands(data);
-    });
-  }, []);
 
   return (
     <>
@@ -41,28 +30,10 @@ const About = () => {
           <img src={images.header05} alt="chef_image" />
         </div>
       </div>
-
-
-
-        {/* brands */}
-      <div className='brands'>
-      <h1 className="headtext__cormorant">Featured on</h1>
-        <div className="app__testimonial-brands app__flex">
-          {brands.map((brand) => (
-            <motion.div
-              whileInView={{ opacity: [0, 1] }}
-              transition={{ duration: 0.5, type: 'tween' }}
-              key={brand._id}
-            >
-              <img src={urlFor(brand.imgUrl)} alt={brand.name} />
-            </motion.div>
-          ))}
-        </div>
-      </div>
     </>
   )
 
 
 };
 
-export default About;
+export default AppWrap(MotionWrap(About), 'about');
