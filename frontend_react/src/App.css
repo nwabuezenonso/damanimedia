@@ -114,7 +114,7 @@
 .spoon__img {
   width: 125px;
   height: 3px;
-  background-color: var(--secondary-color);
+  background-color: var(--black-color);
 }
 
 @media screen and (min-width: 2000px) {

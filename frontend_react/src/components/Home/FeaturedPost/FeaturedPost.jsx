@@ -1,22 +1,20 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import { BsInstagram, BsArrowLeftShort, BsArrowRightShort } from 'react-icons/bs';
 
 import { images } from '../../../constant';
+import { urlFor, client } from '../../../client'  // fetch sanity data
 import './FeaturedPost.css';
 
 const Gallery = () => {
   const [gallery, setGallery] = useState([]); //testimonials and brands
 
   useEffect(() => {
-    const brandsQuery = '*[_type == "brands"]';
+    const query = '*[_type == "featuredpost"]';
 
     client.fetch(query).then((data) => {
-      setTestimonials(data);
+      setGallery(data);
     });
 
-    client.fetch(brandsQuery).then((data) => {
-      setBrands(data);
-    });
   }, []);
 
   // adding a ref to a property
@@ -36,9 +34,9 @@ const Gallery = () => {
     <div className="app__gallery flex__center">
       <div className="app__gallery-images">
         <div className="app__gallery-images_container" ref={scrollRef}>
-          {[images.header00, images.header03, images.header04, images.header05].map((image, index) => (
+          {gallery.map((pic, index) => (
             <div className="app__gallery-images_card flex__center" key={`gallery_image-${index + 1}`}>
-              <img src={image} alt="gallery_image" />
+              <img src={urlFor(pic.imgUrl)} alt={pic.title} />
               <BsInstagram className="gallery__image-icon" />
             </div>
           ))}
