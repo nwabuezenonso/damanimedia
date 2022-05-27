@@ -10,11 +10,6 @@ export default {
             type: 'string'
         },
         {
-            name:'company',
-            title:'Company',
-            type:'string'
-        },
-        {
             name:'imgurl',
             title:'ImgUrl',
             type: 'image',

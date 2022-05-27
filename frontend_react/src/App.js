@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import {Home, About, WeddingStories, Portfolio, AboutDetail, Product, ProductDetail, Checkout } from './container'
-import { Navbar} from './miniComponent'
+import { Navbar, Footer} from './miniComponent'
 import './App.css'
 
 function App() {
@@ -20,6 +20,7 @@ function App() {
           <Route path="/checkout" element={<Checkout /> }/>
         </Routes>
       </BrowserRouter>
+      <Footer />
     </div>
   );
 }

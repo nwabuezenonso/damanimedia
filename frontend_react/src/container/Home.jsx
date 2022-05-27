@@ -1,6 +1,6 @@
 import React from 'react';
 
-import  { Header,About,FeaturedPost }  from '../components/Home'
+import  { Header,About,FeaturedPost, Testimonial }  from '../components/Home'
 
 
 const Home = () => {
@@ -9,6 +9,7 @@ const Home = () => {
       <Header />
       <About />
       <FeaturedPost />
+      <Testimonial />
     </div>
   )
 }
