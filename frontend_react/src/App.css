@@ -76,6 +76,11 @@
   width: 200px;
 }
 
+.custom__button:hover {
+  border: 2px solid var(--gray-color);
+  transition: 1s all;
+}
+
 .p__cormorant {
   font-family: var(--font-base);
   color: var(--white-color);

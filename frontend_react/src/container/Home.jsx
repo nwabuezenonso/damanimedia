@@ -1,6 +1,6 @@
 import React from 'react';
 
-import  { Header,About }  from '../components/Home'
+import  { Header,About,FeaturedPost }  from '../components/Home'
 
 
 const Home = () => {
@@ -8,6 +8,7 @@ const Home = () => {
     <div>
       <Header />
       <About />
+      <FeaturedPost />
     </div>
   )
 }
