@@ -49,7 +49,7 @@
     align-items: center;
 }
 .app__work-portfolio .app__work-item {
-    /* width: 300px; */
+    width: 400px;
     flex-direction: column;
     margin: 2rem;
     /* padding: 1rem; */

@@ -34,10 +34,11 @@ const Navbar = () => {
             <IoClose fontSize={27} className="overlay__close" onClick={() => setToggleMenu(false)} />
             <ul className="app__navbar-smallscreen_links">
               <Link className='small_link' to="/" onClick={() => setToggleMenu(false)}><li>Home</li></Link>
-              <Link className='small_link' to="weddingstories" onClick={() => setToggleMenu(false)}> <li>Wedding stories</li></Link>
-              <Link className='small_link' to="/portfolio" onClick={() => setToggleMenu(false)}><li>Menu</li></Link>
-              <Link className='small_link' to="/about" onClick={() => setToggleMenu(false)}><li>Awards</li></Link>
+              <Link className='small_link' to="/weddingstories" onClick={() => setToggleMenu(false)}> <li>Wedding stories</li></Link>
+              <Link className='small_link' to="/portfolio" onClick={() => setToggleMenu(false)}><li>Portfolio</li></Link>
+              <Link className='small_link' to="/about" onClick={() => setToggleMenu(false)}><li>Information</li></Link>
               <Link className='small_link' to="/contact" onClick={() => setToggleMenu(false)}><li>Contact</li></Link>
+              <Link className='small_link' to="/product" onClick={() => setToggleMenu(false)}><li>Product</li></Link>
             </ul>
           </div>
         )}

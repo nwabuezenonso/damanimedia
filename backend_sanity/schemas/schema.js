@@ -10,7 +10,7 @@ import portfolio from './portfolio';
 import product from './product';
 import testimonials from './testimonials';
 import stories from './stories';
-import banners from './banners';
+import storyImg from './storyImgs';
 import featured from './featured';
 
 // Then we give our schema to the builder and provide the result to Sanity
@@ -21,13 +21,13 @@ export default createSchema({
   // to the ones provided by any plugins that are installed
   types: schemaTypes.concat([
    featured,
-   banners,
    brand,
    contact,
    featuredPost,
    portfolio,
    product,
    testimonials,
-   stories
+   stories,
+   storyImg,
   ]),
 })

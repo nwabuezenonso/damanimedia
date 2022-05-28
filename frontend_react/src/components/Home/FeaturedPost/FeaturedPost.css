@@ -56,7 +56,6 @@
     opacity: 0;
     transition: .5s ease;
     cursor: pointer;
-    bottom: 0;
 }
 
 .app__gallery-images_card img {
@@ -69,6 +68,7 @@
 
 .app__gallery-images_card:hover img {
     opacity: .35;
+    cursor: pointer;
 }
 
 .app__gallery-images_card:hover .gallery__image-icon {

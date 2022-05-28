@@ -60,6 +60,10 @@
     transition: .5s ease;
 }
 
+.app__navbar-login svg{
+    color: #fff;
+}
+
 .app__navbar-login a:hover {
     border-bottom: 1px solid var(--color-golden);
 }
