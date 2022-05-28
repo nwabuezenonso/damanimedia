@@ -9,7 +9,7 @@ import featuredPost from './featuredPost';
 import portfolio from './portfolio';
 import product from './product';
 import testimonials from './testimonials';
-import weddingStories from './weddingStories';
+import stories from './stories';
 import banners from './banners';
 import featured from './featured';
 
@@ -28,6 +28,6 @@ export default createSchema({
    portfolio,
    product,
    testimonials,
-   weddingStories
+   stories
   ]),
 })

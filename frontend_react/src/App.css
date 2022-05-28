@@ -92,6 +92,10 @@
   font-size: 23px;
 }
 
+.app__stories{
+  background: var(--lightGray-color)
+}
+
 .p__opensans {
   font-family: var(--font-alt);
   color: var(--white-color);

@@ -14,8 +14,13 @@ import about from '../assets/About.jpg'
 import logo from '../assets/logo.png'
 import logowhite from '../assets/logowhite.png'
 
+import bgImg from '../assets/bgIMG.png'
+import bgWhite from '../assets/bgWhite.png'
+
 
 const imgassets = {
+    bgImg,
+    bgWhite,
     header00,
     header03,
     header04,

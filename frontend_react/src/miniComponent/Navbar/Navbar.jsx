@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 
 import { BiMenuAltRight } from 'react-icons/bi'; // on screen
 import {IoClose} from 'react-icons/io5'
@@ -14,15 +15,15 @@ const Navbar = () => {
         <img src={images.logowhite} alt="app__logo" />
       </div>
       <ul className="app__navbar-links">
-        <li className="p__opensans app__flex"><div className="dots" /><a href="/">Home</a></li>
-        <li className="p__opensans app__flex"><div className="dots" /><a href="/about">Wedding stories</a></li>
-        <li className="p__opensans app__flex"><div className="dots" /><a href="/menu">Portfolio</a></li>
-        <li className="p__opensans app__flex"><div className="dots" /><a href="/awards">Information</a></li>
-        <li className="p__opensans app__flex"><div className="dots" /><a href="/contact">Contact</a></li>
-        <li className="p__opensans app__flex"><div className="dots" /><a href="/contact">Product</a></li>
-      </ul>
-      <div className="app__navbar-login">
-        <BsFillCartFill />
+        <Link to="/" className="p__opensans app__flex link"  ><div className="dots" />Home</Link>
+        <Link to="/weddingstories" className="p__opensans app__flex link"><div className="dots" />Wedding stories</Link>
+        <Link to="/portfolio" className="p__opensans app__flex link"><div className="dots" />Portfolio</Link>
+        <Link to="/about" className="p__opensans app__flex link" ><div className="dots" />Information</Link>
+        <Link to="/contact" className="p__opensans app__flex link"><div className="dots" />Contact</Link>
+        <Link to="/product" className="p__opensans app__flex link" ><div className="dots" />Product</Link>
+      </ul>     
+      <div className="app__navbar-login">       
+        <Link to="/"><BsFillCartFill /></Link>
         <div />
         {/* <a href="/" className="p__monserrat"></a> */}
       </div>
@@ -32,11 +33,11 @@ const Navbar = () => {
           <div className="app__navbar-smallscreen_overlay flex__center slide-bottom">
             <IoClose fontSize={27} className="overlay__close" onClick={() => setToggleMenu(false)} />
             <ul className="app__navbar-smallscreen_links">
-              <li><a href="/" onClick={() => setToggleMenu(false)}>Home</a></li>
-              <li><a href="/about" onClick={() => setToggleMenu(false)}>About</a></li>
-              <li><a href="/menu" onClick={() => setToggleMenu(false)}>Menu</a></li>
-              <li><a href="/awards" onClick={() => setToggleMenu(false)}>Awards</a></li>
-              <li><a href="/contact" onClick={() => setToggleMenu(false)}>Contact</a></li>
+              <Link className='small_link' to="/" onClick={() => setToggleMenu(false)}><li>Home</li></Link>
+              <Link className='small_link' to="weddingstories" onClick={() => setToggleMenu(false)}> <li>Wedding stories</li></Link>
+              <Link className='small_link' to="/portfolio" onClick={() => setToggleMenu(false)}><li>Menu</li></Link>
+              <Link className='small_link' to="/about" onClick={() => setToggleMenu(false)}><li>Awards</li></Link>
+              <Link className='small_link' to="/contact" onClick={() => setToggleMenu(false)}><li>Contact</li></Link>
             </ul>
           </div>
         )}
