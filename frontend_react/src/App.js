@@ -1,6 +1,6 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom'
-import {Home, About, WeddingStories, Portfolio, AboutDetail, Product, ProductDetail, Checkout } from './container'
+import {Home, About, Portfolio, AboutDetail, Product, ProductDetail, Checkout } from './container'
 import { Navbar, Footer} from './miniComponent'
 import './App.css'
 
@@ -10,8 +10,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home /> }/>
-          <Route path="/weddingstories" element={<WeddingStories /> }/>
-          <Route path="/portfolio" element={<Portfolio /> }/>
+          <Route path="portfolio" element={<Portfolio /> }/>
           <Route path="/about"  element={<About /> }/>
           <Route path="/about/:id" element={<AboutDetail /> }/>
           <Route path="/contact" element={<AboutDetail /> }/>

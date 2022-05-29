@@ -55,7 +55,7 @@
 }
 
 .app__navbar-login a {
-    margin: 0 1rem;
+    margin: 0 0.5rem;
     text-decoration: none;
     transition: .5s ease;
 }
@@ -108,7 +108,8 @@
 }
 
 .app__navbar-smallscreen_links .small_link {
-    padding: 2rem;
+    margin: 2rem;
+    padding: 1rem;
     cursor: pointer;
     color: var(--black-color);
     font-size: 1.5rem;

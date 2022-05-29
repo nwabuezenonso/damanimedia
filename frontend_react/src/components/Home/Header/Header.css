@@ -1,5 +1,6 @@
 #header{
     background: url('../../../assets/header04.jpg');
+    background-attachment: fixed;
     height: 100vh;
     background-size: cover;
     background-position: center 40%;

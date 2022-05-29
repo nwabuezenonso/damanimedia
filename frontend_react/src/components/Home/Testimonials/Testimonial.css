@@ -47,7 +47,7 @@
 
 .app__testimonial-content h4{
     font-weight: 600;
-    color: var(--secondary-color);
+    color: var(--black-color);
     margin-top: 2rem;
 }
 
@@ -75,11 +75,11 @@
 .app__testimonial-btns div svg {
     width: 20px;
     height: 20px;
-    color: var(--secondary-color);
+    color: var(--black-color);
 }
 
 .app__testimonial-btns div:hover svg {
-    background-color: var(--secondary-color);
+    background-color: var(--black-color);
     color: var(--white-color);
     border-radius: 50%;
     width: 30px;

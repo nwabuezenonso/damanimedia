@@ -60,7 +60,29 @@
 }
 
 .custom__button {
-  border: 2px solid var(--secondary-color);
+  border: 2px solid var(--black-color);
+  background: none;
+  color: var(--black-color);
+  font-family: var(--font-base);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 28px;
+  font-size: 20px;
+  padding: 0.5rem 1.5rem;
+  margin-top: 1rem;
+  border-radius: 1px;
+  outline: none;
+  cursor: pointer;
+  width: 200px;
+}
+
+.portfolio_style{
+  background-color: #2d3436;
+  background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
+}
+
+.custom__button_page {
+  border: 2px solid var(--black-color);
   background: none;
   color: var(--black-color);
   font-family: var(--font-base);
@@ -77,7 +99,7 @@
 }
 
 .custom__button:hover {
-  border: 2px solid var(--gray-color);
+  border: 2px solid var(--white-color);
   transition: 1s all;
 }
 
@@ -250,13 +272,13 @@
 
 @media screen and (max-width: 850px) {
   .section__padding {
-    padding: 1rem;
+    padding: 2rem 4rem;
   }
 }
 
 @media screen and (max-width: 650px) {
   .section__padding {
-    padding: 1rem;
+    padding: 2rem 4rem;
   }
   
   .p__cormorant {
@@ -291,6 +313,6 @@
     line-height: 70px;
   }
   .section__padding {
-    padding: 1rem;
+    padding: 2rem 4rem;
   }
 }

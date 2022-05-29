@@ -2,10 +2,12 @@ import React from 'react'
 
 import { Portfolio } from '../components/Portfolio'
 
-const Portfolios = () => {
+const PortfolioPage = () => {
   return (
-    <Portfolio />
+   <div className='portfolio_style'>
+     <Portfolio />
+   </div>
   )
 }
 
-export default Portfolios
+export default PortfolioPage

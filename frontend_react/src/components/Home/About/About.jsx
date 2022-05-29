@@ -19,7 +19,6 @@ const About = () => {
               <p className="p__opensans" style={{color: "#000", margin: "2rem 0 2rem 0"}}>Based in Nigeria, Available Worldwide</p>
             </div>
             <p className="p__opensans" style={{width: "100%", color: "#000"}}>Damani’s Media is a team of photographers, who push the boundaries by changing the way Nigerian weddings have traditionally been photographed. By doing so, we create images that stand out in today’s highly competitive wedding market. Ultimately, our goal is to craft beautiful images that are just as unique as the people in the photographs.</p>
-            <button type="button" className="custom__button">Learn More</button>
           </div>
 
           <div className="app__chef-sign">
@@ -27,7 +26,7 @@ const About = () => {
           </div>
         </div>
         <div className="app__wrapper_img app__wrapper_img-reverse">
-          <img src={images.header05} alt="chef_image" />
+          <img src={images.header01} alt="chef_image" />
         </div>
       </div>
     </>
