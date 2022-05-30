@@ -29,6 +29,10 @@
     list-style: none;
 }
 
+.active{
+    color: #9c9080 !important;
+}
+
 .app__navbar-links .link {
     margin: 0 1rem;
     cursor: pointer;
@@ -45,7 +49,7 @@
 }
 
 .app__navbar-links .link:hover div  {
-    background: var(--secondary-color);
+    background: var(--black-color);
 }
 
 .app__navbar-login {

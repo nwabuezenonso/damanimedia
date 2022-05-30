@@ -6,7 +6,8 @@ export const client =  sanityClient({
     dataset: 'production',
     apiVersion: '2022-03-10',
     useCdn: true,
-    token: process.env.REACT_APP_SANITY_PROJECT_TOKEN
+    token: process.env.REACT_APP_SANITY_PROJECT_TOKEN,
+    ignoreBrowserTokenWarning: true
 })
 
 // used for woking with images

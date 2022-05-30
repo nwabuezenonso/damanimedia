@@ -1,6 +1,7 @@
 import React from 'react';
 
-import  { Header,About,FeaturedPost, Testimonial, Featured }  from '../components/Home'
+import  { Header,About,FeaturedPost, Testimonial, Featured }  from '../components/Home';
+import { Footer} from '../miniComponent';
 
 
 const Home = () => {
@@ -11,6 +12,7 @@ const Home = () => {
       <Featured />
       <FeaturedPost />
       <Testimonial />
+      <Footer />
     </div>
   )
 }

@@ -16,11 +16,12 @@ const Navbar = () => {
         <img src={images.logowhite} alt="app__logo" />
       </div>
       <ul className="app__navbar-links">
-        <Link to="/" className="p__opensans app__flex link"  ><div className="dots" />Home</Link>
-        <Link to="/portfolio" className="p__opensans app__flex link"><div className="dots" />Portfolio</Link>
-        <Link to="/about" className="p__opensans app__flex link" ><div className="dots" />Information</Link>
-        <Link to="/contact" className="p__opensans app__flex link"><div className="dots" />Contact</Link>
-        <Link to="/product" className="p__opensans app__flex link" ><div className="dots" />Product</Link>
+        <NavLink to="/" className="p__opensans app__flex link"  ><div className="dots" />Home</NavLink>
+        <NavLink to="weddingstories" className="p__opensans app__flex link"  ><div className="dots" />Wedding stories</NavLink>
+        <NavLink to="/portfolio" className="p__opensans app__flex link"><div className="dots" />Portfolio</NavLink>
+        <NavLink to="/about" className="p__opensans app__flex link" ><div className="dots" />Information</NavLink>
+        <NavLink to="/contact" className="p__opensans app__flex link"><div className="dots" />Contact</NavLink>
+        <NavLink to="/product" className="p__opensans app__flex link" ><div className="dots" />Product</NavLink>
       </ul>     
       <div className="app__navbar-login">       
         <Link to="/"><BsFillCartFill /></Link>
