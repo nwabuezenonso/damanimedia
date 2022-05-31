@@ -1,12 +1,18 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
+import { useParams } from 'react-router-dom';
+import { motion } from 'framer-motion';
 import { BsInstagram, BsArrowLeftShort, BsArrowRightShort } from 'react-icons/bs';
 
-import { images } from '../../../constant';
-import { SubHeading } from '../../../miniComponent';
-import './Header.css'
+import { urlFor, client } from '../../client';
+import './StoriesDetails.css';
+import { images } from '../../constant';
 
-const Header = () => {
-  // adding a ref to a property
+const Stories = () => {
+  const { id } = useParams()
+  const [selectedStory, setSelectedStory] = useState([]);
+  const [ story, setStory] = useState([])
+
+
   const scrollRef = React.useRef(null);   // useref returns a object
 
   const scroll = (direction) => {
@@ -19,7 +25,29 @@ const Header = () => {
     }
   };
 
+  useEffect(() => {
+    const query = `*[_type == "weddingstoriesdetails" && tags == '${id}']`; //fetch the first data
+
+    client.fetch(query).then((data) => {
+      setSelectedStory(data)
+
+      console.log(data)
+    });
+    
+    // const morequery = `[_type == "weddingstories]`
+
+    // client.fetch(morequery).then((data) => {
+    //   setStory(data)
+    // })
+
+  }, [id]);
+
   return (
+    <>
+    <div className='storiesTitle'>
+      <h2 className='headtext__cormorant'>Wedding Story</h2>
+      <h3 className='headtext__cormorant'>{id}</h3>
+    </div>
     <div className="app__gallery flex__center">
       <div className="app__gallery-content">
         <h1 className="headtext__cormorant">Capture Every <span style={{color: "red"}}>Moment!</span></h1>
@@ -28,9 +56,9 @@ const Header = () => {
       </div>
       <div className="app__gallery-images">
         <div className="app__gallery-images_container" ref={scrollRef}>
-          {[images.header00, images.header01, images.header03, images.header04, images.header05, images.header07, images.header08, images.header09].map((image, index) => (
+          {selectedStory.map((data, index) => (
             <div className="app__gallery-images_card flex__center" key={`gallery_image-${index + 1}`}>
-              <img src={image} alt="gallery_image" />
+              <img src={urlFor(data.imgUrl)} alt="gallery_image" />
               <BsInstagram className="gallery__image-icon" />
             </div>
           ))}
@@ -41,7 +69,8 @@ const Header = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 
-export default Header;
+export default Stories;

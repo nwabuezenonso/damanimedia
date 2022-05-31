@@ -27,12 +27,12 @@ const Stories = () => {
         {allStories.map((filter, index) => (
           <div className="app__work-item app__flex" key={index}>
             <div className="app__work-img app__flex">
-              <img src={urlFor(filter.image[0])}  alt={filter.title} />
+              <img src={urlFor(filter.imgUrl)}  alt={filter.title} />
               <motion.div className="app__work-hover app__flex">
 
               </motion.div>
             </div>
-           <Link to={`/weddingstories/${filter.slug.current}`}><p className='p__cormorant' style={{color: "#000", textDecoration: "underline"}}>{filter.title}</p></Link>
+           <Link to={`/weddingstories/${filter.tags}`}><p className='p__cormorant' style={{color: "#000", textDecoration: "underline"}}>{filter.title}</p></Link>
           </div>
         ))}
       </motion.div>

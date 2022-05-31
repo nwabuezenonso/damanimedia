@@ -63,9 +63,9 @@
 }
 
 .custom__button {
-  border: 2px solid var(--black-color);
+  border: 2px solid var(--white-color);
   background: none;
-  color: var(--black-color);
+  color: var(--white-color);
   font-family: var(--font-base);
   font-weight: 700;
   letter-spacing: 0.04em;
@@ -81,6 +81,12 @@
 
 .portfolio_style{
   background-color: #fff;
+}
+
+#align{
+  text-align: left;
+  margin-left: 3rem;
+  margin-top: 3rem;
 }
 
 .head-text {
@@ -108,7 +114,7 @@
 
 
 .custom__button_page {
-  border: 2px solid var(--black-color);
+  border: 2px solid var(--secondary-color);
   background: none;
   color: var(--black-color);
   font-family: var(--font-base);
@@ -146,7 +152,7 @@
 
 .p__opensans {
   font-family: var(--font-alt);
-  color: var(--white-color);
+  color: var(--black-color);
   font-weight: 400;
   letter-spacing: 0.04em;
   text-transform: capitalize;
@@ -157,16 +163,16 @@
 .headtext__cormorant {
   font-family: var(--font-base);
   color: var(--color-black);
-  font-size: 64px;
+  font-size: 60px;
   line-height: 83.2px;
   letter-spacing: 0.04em;
   text-transform: capitalize;
 }
 
 .spoon__img {
-  width: 125px;
-  height: 3px;
-  background-color: var(--black-color);
+  width: 350px;
+  height: 5px;
+  background-color: var(--secondary-color);
 }
 
 .app__navigation {
@@ -206,7 +212,7 @@
   height: 40px;
   border-radius: 50%;
   margin: 0.25rem 0;
-  border: 1px solid var(--black-color);
+  border: 1px solid var(--white-color);
 
   display: flex;
   justify-content: center;
@@ -218,7 +224,7 @@
 .app__social div svg{
   width: 15px;
   height: 15px;
-  color: var(--black-color);
+  color: var(--white-color);
 }
 
 .app__social div:hover{
@@ -257,8 +263,7 @@
   }
 
   .headtext__cormorant {
-    font-size: 150px;
-    line-height: 210px;
+    font-size: 64px;
   }
 
   .spoon__img {
@@ -283,6 +288,11 @@
     flex-direction: column;
   }
 
+  .headtext__cormorant {
+    font-size: 32px;
+    margin-top: 4rem;
+  }
+
   .app__wrapper_img {
     margin: 5rem 0 0 0;
   }
@@ -294,6 +304,11 @@
   .app__wrapper_img img {
     width: 100%;
   }
+
+  .spoon__img {
+    display: none;
+  }
+
 }
 
 @media screen and (max-width: 850px) {
@@ -308,7 +323,7 @@
   }
   
   .p__cormorant {
-    font-size: 21px;
+    font-size: 30px;
   }
 
   .p__monserrat {
@@ -335,7 +350,7 @@
   }
 
   .headtext__cormorant {
-    font-size: 45px;
+    font-size: 30px;
     line-height: 70px;
   }
   .section__padding {

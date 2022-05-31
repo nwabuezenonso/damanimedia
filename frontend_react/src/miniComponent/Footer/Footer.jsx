@@ -11,7 +11,6 @@ const Footer = () => (
       <div className="app__footer-links_logo">
         <img src={images.logo} alt="footer_logo" />
         <p className="p__opensans" style={{color: "#000"}}>&quot;Breaching The Gap Between Your Imagination And Reality&quot;</p>
-        <ImCamera />
         <div className="app__footer-links_icons">
           <FiFacebook />
           <FiTwitter />

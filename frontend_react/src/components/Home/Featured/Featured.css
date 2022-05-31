@@ -3,8 +3,7 @@
 }
 
 .app__testimonial-brands {
-    flex-wrap: wrap;
-    margin-top: 2rem;
+    flex-wrap: wrap;;
 } 
 
 .app__testimonial-brands div {

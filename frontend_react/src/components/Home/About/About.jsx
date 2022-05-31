@@ -10,6 +10,9 @@ const About = () => {
   return (
     <>
       <div className="app__bg app__wrapper section__padding">
+        <div className="app__wrapper_img app__wrapper_img-reverse">
+          <img src={images.header01} alt="chef_image" />
+        </div>
         <div className="app__wrapper_info">
           <h1 className="headtext__cormorant">About</h1>
           {/* <SubHeading title="" /> */}
@@ -25,9 +28,6 @@ const About = () => {
             <img src={images.logo} alt="sign_image" />
           </div>
         </div>
-        <div className="app__wrapper_img app__wrapper_img-reverse">
-          <img src={images.header01} alt="chef_image" />
-        </div>
       </div>
     </>
   )
@@ -35,4 +35,4 @@ const About = () => {
 
 };
 
-export default AppWrap(MotionWrap(About), 'about');
+export default MotionWrap(About);

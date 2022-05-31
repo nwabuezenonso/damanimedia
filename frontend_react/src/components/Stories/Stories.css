@@ -1,9 +1,9 @@
 .portfolio_bg_img {
-    background: url('../../assets/headermain2.jpg');
-    height: 50vh;
+    background: url('../../assets/header00.jpg');
+    margin-top: 5rem;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center -50px
 }
 
 #downwards_link{
@@ -31,7 +31,7 @@
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
     /* background-color: var(--black-color); */
-    color: var(--white-color);
+    color: var(--black-color);
     font-weight: 800;
     cursor: pointer;
     transition: all 0.3s ease;

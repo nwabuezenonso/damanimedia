@@ -1,0 +1,21 @@
+.storydetailsHeader{
+    background: url('../../assets/header00.jpg');
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    height: 100vh;
+}
+
+
+.storiesTitle{
+    height: 200px;
+}
+
+.storiesTitle h3{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.storiesTitle h2{
+    margin-top: 5rem;
+    text-align: center;
+}

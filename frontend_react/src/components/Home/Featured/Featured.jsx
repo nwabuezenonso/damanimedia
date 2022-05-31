@@ -20,8 +20,7 @@ const About = () => {
     <>
         {/* brands */}
         <div className='brands'>
-           <h1 className="headtext__cormorant">Featured on</h1>
-            <div className="app__testimonial-brands app__flex">
+            <div style={{background: "#000"}} className="app__testimonial-brands app__flex">
                 {brands.map((brand) => (
                     <motion.div
                     whileInView={{ opacity: [0, 1] }}

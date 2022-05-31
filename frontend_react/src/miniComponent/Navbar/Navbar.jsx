@@ -13,11 +13,11 @@ const Navbar = () => {
   return (
     <nav className="app__navbar">
       <div className="app__navbar-logo">
-        <img src={images.logowhite} alt="app__logo" />
+        <img src={images.logo} alt="app__logo" />
       </div>
       <ul className="app__navbar-links">
         <NavLink to="/" className="p__opensans app__flex link"  ><div className="dots" />Home</NavLink>
-        <NavLink to="weddingstories" className="p__opensans app__flex link"  ><div className="dots" />Wedding stories</NavLink>
+        <NavLink to="/weddingstories" className="p__opensans app__flex link"  ><div className="dots" />Wedding stories</NavLink>
         <NavLink to="/portfolio" className="p__opensans app__flex link"><div className="dots" />Portfolio</NavLink>
         <NavLink to="/about" className="p__opensans app__flex link" ><div className="dots" />Information</NavLink>
         <NavLink to="/contact" className="p__opensans app__flex link"><div className="dots" />Contact</NavLink>
@@ -30,12 +30,13 @@ const Navbar = () => {
         <Link to="/"><FiInstagram /></Link>
       </div>
       <div className="app__navbar-smallscreen">
-        <BiMenuAltRight color="#fff" fontSize={35} onClick={() => setToggleMenu(true)} />
+        <BiMenuAltRight color="#000" fontSize={35} onClick={() => setToggleMenu(true)} />
         {toggleMenu && (
           <div className="app__navbar-smallscreen_overlay flex__center slide-bottom">
             <IoClose fontSize={27} className="overlay__close" onClick={() => setToggleMenu(false)} />
             <ul className="app__navbar-smallscreen_links">
               <Link className='small_link' to="/" onClick={() => setToggleMenu(false)}><li>Home</li></Link>
+              <Link className="small_link"  to="weddingstories" onClick={() => setToggleMenu(false)} ><li>Wedding Stories</li></Link>
               <Link className='small_link' to="/portfolio" onClick={() => setToggleMenu(false)}><li>Portfolio</li></Link>
               <Link className='small_link' to="/about" onClick={() => setToggleMenu(false)}><li>Information</li></Link>
               <Link className='small_link' to="/contact" onClick={() => setToggleMenu(false)}><li>Contact</li></Link>
