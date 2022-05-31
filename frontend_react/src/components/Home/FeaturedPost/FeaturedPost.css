@@ -5,6 +5,13 @@
     padding: 5rem 0 0 6rem;
 }
 
+#app__gallery{
+    flex-direction: row;
+
+    background: var(--white-color);
+    padding: 5rem 0 0 6rem;
+}
+
 .app__gallery-content {
     flex: 1;
     display: flex;

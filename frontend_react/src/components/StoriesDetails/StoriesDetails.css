@@ -10,12 +10,16 @@
     height: 200px;
 }
 
-.storiesTitle h3{
+/* .storiesTitle h3{
     text-align: center;
     margin-bottom: 2rem;
-}
+} */
 
 .storiesTitle h2{
-    margin-top: 5rem;
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.storiesTitle h3{
     text-align: center;
 }

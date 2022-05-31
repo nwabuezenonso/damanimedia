@@ -22,8 +22,8 @@ const Header = () => {
   return (
     <div className="app__gallery flex__center">
       <div className="app__gallery-content">
-        <h1 className="headtext__cormorant">Capture Every <span style={{color: "red"}}>Moment!</span></h1>
-        <h3 className="p__cormorant" style={{ color: '#000', marginTop: '2rem' }}> Based In Nigeria, Available Worldwide</h3>
+        <h1 className="headtext__cormorant">Capture Every Moment</h1>
+        <h3 className="p__cormorant" style={{ color: '#000' }}> Based In Nigeria, Available Worldwide</h3>
         <p className="p__opensans" style={{ color: '#000', marginTop: '2rem' }}>Damani’s Media Is A Team Of Photographers, Who Push The Boundaries By Changing The Way Nigerian Weddings Have Traditionally Been Photographed. By Doing So, We Create Images That Stand Out In Today’s Highly Competitive Wedding Market. Ultimately, Our Goal Is To Craft Beautiful Images That Are Just As Unique As The People In The Photographs.</p>
       </div>
       <div className="app__gallery-images">

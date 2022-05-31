@@ -54,11 +54,11 @@
 .app__work-portfolio {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
 }
 .app__work-portfolio .app__work-item {
-    width: 500px;
+    width: 435px;
     flex-direction: column;
     margin: 2rem;
     /* padding: 1rem; */

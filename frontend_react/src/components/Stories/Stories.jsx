@@ -28,9 +28,7 @@ const Stories = () => {
           <div className="app__work-item app__flex" key={index}>
             <div className="app__work-img app__flex">
               <img src={urlFor(filter.imgUrl)}  alt={filter.title} />
-              <motion.div className="app__work-hover app__flex">
-
-              </motion.div>
+              <motion.div className="app__work-hover app__flex"></motion.div>
             </div>
            <Link to={`/weddingstories/${filter.tags}`}><p className='p__cormorant' style={{color: "#000", textDecoration: "underline"}}>{filter.title}</p></Link>
           </div>

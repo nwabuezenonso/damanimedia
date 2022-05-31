@@ -111,10 +111,8 @@
  }
 }
 
-
-
 .custom__button_page {
-  border: 2px solid var(--secondary-color);
+  border: 2px solid #071112;
   background: none;
   color: var(--black-color);
   font-family: var(--font-base);

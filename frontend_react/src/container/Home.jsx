@@ -1,6 +1,6 @@
 import React from 'react';
 
-import  { Header,About,FeaturedPost, Testimonial, Featured }  from '../components/Home';
+import  { Header,FeaturedPost, Testimonial, Featured }  from '../components/Home';
 import { Footer} from '../miniComponent';
 
 
