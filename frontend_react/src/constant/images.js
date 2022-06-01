@@ -8,9 +8,10 @@ import header08 from '../assets/header08.jpg';
 import header09 from '../assets/header09.jpg';
 import header11 from '../assets/heading11.jpg';
 import quote from '../assets/quote.png';
-import headermain from '../assets/headermain2.jpg'
+import headermain from '../assets/headermain2.jpg';
+import about from '../assets/About.jpg';
 
-import about from '../assets/About.jpg'
+import introvid from '../assets/intro.mp4';
 
 
 import logo from '../assets/logo.png'
@@ -36,7 +37,8 @@ const imgassets = {
     logo,
     logowhite,
     quote,
-    about
+    about,
+    introvid
 }
 
 export default imgassets

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import  { Header,FeaturedPost, Testimonial, Featured }  from '../components/Home';
+import  { Header,FeaturedPost, Intro ,Testimonial, Featured }  from '../components/Home';
 import { Footer} from '../miniComponent';
 
 
@@ -10,6 +10,7 @@ const Home = () => {
       <Header />
       <Featured />
       <FeaturedPost />
+      <Intro />
       <Testimonial />
       <Footer />
     </div>
