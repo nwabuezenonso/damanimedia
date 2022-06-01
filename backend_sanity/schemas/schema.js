@@ -7,10 +7,11 @@ import brand from './brands';
 import contact from './contact';
 import featuredPost from './featuredPost';
 import portfolio from './portfolio';
+import About from './About';
 import product from './product';
 import testimonials from './testimonials';
-import stories from './stories';
-import storyImg from './storyImgs';
+import weddingstories from './weddingstories';
+import weddingstoryDetails from './weddingstoryDetails';
 import featured from './featured';
 
 // Then we give our schema to the builder and provide the result to Sanity
@@ -25,9 +26,10 @@ export default createSchema({
    contact,
    featuredPost,
    portfolio,
+   About,
    product,
    testimonials,
-   stories,
-   storyImg,
+   weddingstories,
+   weddingstoryDetails
   ]),
 })

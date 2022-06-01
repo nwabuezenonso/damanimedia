@@ -1,9 +1,5 @@
 .portfolio_bg_img {
-    background: url('../../assets/header00.jpg');
-    margin-top: 5rem;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center -50px
+    height: 100px;
 }
 
 #downwards_link{
@@ -25,7 +21,6 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin: 2rem 0 2rem;
 }
 .app__work-filter .app__work-filter-item {
     padding: 0.5rem 1rem;
@@ -38,7 +33,7 @@
     margin: 0.5rem;
 }
 .app__work-filter .app__work-filter-item:hover {
-    background-color: #9c9080;
+    background-color: #000;
     color: #fff;
 }
 @media screen and (min-width: 2000px) {
@@ -48,17 +43,17 @@
    }
 }
 .app__work-filter .item-active {
-    background-color: var(--secondary-color);
+    background-color: rgb(7, 17, 18);
     color: #fff;
 }
 .app__work-portfolio {
     display: flex;
     flex-wrap: wrap;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
 }
 .app__work-portfolio .app__work-item {
-    width: 435px;
+    width: 410px;
     flex-direction: column;
     margin: 2rem;
     /* padding: 1rem; */

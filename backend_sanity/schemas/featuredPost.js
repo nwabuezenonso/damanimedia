@@ -9,12 +9,12 @@ export default {
         type: 'string',
         },
         {
-            name:'imgUrl',
-            title:'ImgUrl',
-            type: 'image',
-            options: {
-              hotspot: true,
-            },
+          name:'imgUrl',
+          title:'ImgUrl',
+          type: 'image',
+          options: {
+            hotspot: true,
+          },
         },
     ],
   };

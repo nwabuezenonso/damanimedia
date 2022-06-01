@@ -1,6 +1,6 @@
 export default {
-    name: 'stories',
-    title: 'Stories',
+    name: 'weddingstories',
+    title: 'Weddingstories',
     type: 'document',
     fields: [
       {
@@ -9,12 +9,12 @@ export default {
         type: 'string',
       },
       {
-        name: 'imgUrl',
-        title: 'ImgUrl',
+        name:'imgUrl',
+        title:'ImgUrl',
         type: 'image',
         options: {
           hotspot: true,
-        }
+        },
       },
       {
         name: 'tags',

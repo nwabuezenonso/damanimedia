@@ -1,20 +1,12 @@
 export default {
-    name: 'storyImgs',
-    title: 'StoryImg',
+    name: 'about',
+    title: 'About',
     type: 'document',
     fields: [
         {
-          name: 'title',
-          title: 'Title',
-          type: 'string',
-        },
-        {
           name: 'imgUrl',
-          title: 'ImgUrl',
+          title: 'Image',
           type: 'image',
-          options: {
-            hotspot: true,
-          }
         },
         {
           name: 'tags',

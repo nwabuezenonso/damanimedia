@@ -1,12 +1,12 @@
 import React from 'react'
 
-import { Stories } from '../components/Stories';
+import { Portfolio } from '../components/Portfolio';
 import { Footer} from '../miniComponent';
 
 const PortfolioPage = () => {
   return (
    <div className='portfolio_style'>
-     <Stories />
+     <Portfolio />
      <Footer />
    </div>
   )

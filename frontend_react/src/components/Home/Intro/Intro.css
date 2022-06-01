@@ -1,6 +1,7 @@
 .app__video {
     height: 100vh;
     position: relative;
+    margin-top: 1rem;
 }
 
 .app__video video {
