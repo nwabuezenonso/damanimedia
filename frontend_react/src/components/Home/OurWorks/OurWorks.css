@@ -1,0 +1,98 @@
+.ourWork{
+    padding: 2rem;
+}
+
+.ourWorkTitle p{
+    font-size: 32px;
+    font-family: var(--font-base);
+    font-size: 80px;
+}
+
+.ourWorkTitle p span{
+    font-weight: 600;
+}
+
+.ourWorkTitle div{
+    width: 50px;
+    height: 2px;
+    background: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+/* Masonry Class */
+.my-masonry-grid {
+    display: -webkit-box; 
+    display: -ms-flexbox; 
+    display: flex;
+    width: auto;
+  }
+
+  .my-masonry-grid_column img{
+    width: 99%;
+  }
+  
+
+
+@media screen and (max-width: 850px) {
+    .my-masonry-grid  img{
+        width: 99%;
+        padding: 0;
+    }
+
+    .ourWorkTitle{
+        padding: 1rem;
+    }
+    
+}
+
+
+
+
+.portfolio_bg_img {
+    height: 100px;
+}
+
+#downwards_link{
+    position: absolute;
+    bottom: 0;
+    left:0;
+    background-color: none;
+}
+
+.app__works {
+    flex: 1;
+    width: 100%;
+    flex-direction: column;
+}
+.app__work-filter {
+    font-family: var(--font-base);
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.app__work-filter .app__work-filter-item {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    /* background-color: var(--black-color); */
+    color: var(--black-color);
+    font-weight: 800;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 0.5rem;
+}
+.app__work-filter .app__work-filter-item:hover {
+    background-color: #000;
+    color: #fff;
+}
+@media screen and (min-width: 2000px) {
+    .app__work-filter .app__work-filter-item {
+        padding: 1rem 2rem;
+        border-radius: 0.85rem;
+   }
+}
+.app__work-filter .item-active {
+    background-color: rgb(7, 17, 18);
+    color: #fff;
+}

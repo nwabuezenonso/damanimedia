@@ -1,18 +1,18 @@
 import React from 'react';
 
-import  { Header,FeaturedPost, Intro ,Testimonial, Featured }  from '../components/Home';
-import { Footer} from '../miniComponent';
+// ,FeaturedPost, Intro ,Testimonial, Featured
+
+import  { Header, About, OurWorks, Teams, Contact }  from '../components/Home';
 
 
 const Home = () => {
   return (
     <div>
       <Header />
-      <Featured />
-      <FeaturedPost />
-      <Intro />
-      <Testimonial />
-      <Footer />
+      <About />
+      <OurWorks/>
+      <Teams />
+      <Contact />
     </div>
   )
 }

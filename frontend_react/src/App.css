@@ -6,24 +6,10 @@
 
 .section__padding {
   padding: 2rem 4rem;
-}
-
-.p-text {
-  font-size: 0.8rem;
-  text-align: left;
-  color: var(--gray-color);
-  line-height: 1.5;
-}
-@media screen and (min-width: 2000px) {
-  .p-text {
-    font-size: 1.75rem;
- }
-}
+} 
 
 .flex__center {
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .app__wrapper {
@@ -31,7 +17,7 @@
   justify-content: space-between;
   align-items: center;
 
-  min-height: 100vh;
+  height: 100vh;
 }
 
 .app__wrapper_info {
@@ -49,8 +35,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
-  margin-left: 2rem;
 }
 
 .app__wrapper_img-reverse {
@@ -63,20 +47,18 @@
 }
 
 .custom__button {
-  border: 2px solid var(--white-color);
+  border: none;
   background: none;
   color: var(--white-color);
   font-family: var(--font-base);
-  font-weight: 700;
+  font-weight: 400;
   letter-spacing: 0.04em;
   line-height: 28px;
   font-size: 20px;
-  padding: 0.5rem 1.5rem;
-  margin-top: 1rem;
-  border-radius: 1px;
   outline: none;
   cursor: pointer;
   width: 200px;
+  padding-left: 10px;
 }
 
 .portfolio_style{
@@ -87,18 +69,6 @@
   text-align: left;
   margin-left: 3rem;
   margin-top: 3rem;
-}
-
-.head-text {
-  font-size: 2.75rem;
-  font-weight: 800;
-  text-align: center;
-  color: var(--black-color);
-  text-transform: capitalize;
-  font-family: var(--font-base);
-}
-.head-text span {
-  color: var(--secondary-color);
 }
 @media screen and (min-width: 2000px) {
   .head-text {
@@ -133,44 +103,25 @@
   transition: 1s all;
 }
 
-.p__cormorant {
+.small_text {
   font-family: var(--font-base);
-  color: var(--white-color);
   font-weight: 700;
   letter-spacing: 0.04em;
   text-transform: capitalize;
   font-feature-settings: 'tnum' on, 'lnum' on;
   line-height: 29.9px;
-  font-size: 23px;
+  font-size: 16px;
 }
 
 .app__stories{
   background: var(--lightGray-color)
 }
 
-.p__opensans {
-  font-family: var(--font-alt);
-  color: var(--black-color);
-  font-weight: 400;
-  letter-spacing: 0.04em;
-  text-transform: capitalize;
-  line-height: 28px;
-  font-size: 16px;
-}
-
-.headtext__cormorant {
-  font-family: var(--font-base);
-  color: var(--color-black);
-  font-size: 60px;
-  line-height: 83.2px;
-  letter-spacing: 0.04em;
-  text-transform: capitalize;
-}
-
 .spoon__img {
-  width: 350px;
-  height: 5px;
+  width: 50px;
+  height: 3px;
   background-color: var(--secondary-color);
+  margin-left: 2.5rem;
 }
 
 .app__navigation {
@@ -244,12 +195,6 @@
 
 
 @media screen and (min-width: 2000px) {
-  .custom__button,
-  .p__cormorant {
-    font-size: 37px;
-    line-height: 67px;
-  }
-
   .app__navigation-dot {
     width: 20px;
     height: 20px;
@@ -284,6 +229,7 @@
 @media screen and (max-width: 1150px) {
   .app__wrapper {
     flex-direction: column;
+    height: auto;
   }
 
   .headtext__cormorant {
@@ -291,20 +237,8 @@
     margin-top: 4rem;
   }
 
-  .app__wrapper_img {
-    margin: 5rem 0 0 0;
-  }
-
   .app__wrapper_img-reverse {
     margin: 0 0 5rem 0;
-  }
-
-  .app__wrapper_img img {
-    width: 100%;
-  }
-
-  .spoon__img {
-    display: none;
   }
 
 }

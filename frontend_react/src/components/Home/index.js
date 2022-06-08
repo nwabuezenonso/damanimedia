@@ -1,6 +1,7 @@
 export {default as Header } from './Header/Header';
-export {default as FeaturedPost } from './FeaturedPost/FeaturedPost';
-export { default as Intro } from './Intro/Intro';
-export {default as Testimonial } from './Testimonials/Testimonial';
-export { default as Featured} from './Featured/Featured'
+export {default as About } from './About/About';
+export {default as OurWorks } from './OurWorks/OurWorks';
+export { default as Teams } from './Teams/Teams';
+export {default as Contact } from './Contact/Contact';
+// export { default as Featured} from './Featured/Featured'
 
