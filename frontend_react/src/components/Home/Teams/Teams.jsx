@@ -1,5 +1,6 @@
 import React, { useState, useEffect} from 'react'
-import './Teams.css'
+import './Teams.css';
+import { SubHeading } from '../../../miniComponent';
 import { urlFor, client } from '../../../client';
 
 const Teams = () => {
@@ -19,11 +20,8 @@ const Teams = () => {
     <>
       <div className='ourTeam'>
         <div className='ourWorkTitle'>
-          <p>
-          <span>Our </span>
-            Teams
-          </p>
-          <div />
+        <h1 className="app__header-h1"><span style={{fontWeight: "400"}}> our</span> Team 
+        </h1>
         </div>
       </div>
       <div

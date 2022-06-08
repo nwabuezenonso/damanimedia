@@ -1,6 +1,6 @@
-.ourWork{
+/* .ourWork{
     padding: 2rem;
-}
+} */
 
 .ourWorkTitle p{
     font-size: 32px;
@@ -68,7 +68,7 @@
     font-family: var(--font-base);
     display: flex;
     flex-direction: row;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
