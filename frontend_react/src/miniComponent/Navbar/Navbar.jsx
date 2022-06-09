@@ -24,9 +24,7 @@ const Navbar = () => {
             <ul className="app__navbar-smallscreen_links">
               <NavLink to="/" className="links" onClick={() => setToggleMenu(false)}>Home</NavLink>
               <NavLink to="/weddingstories" className="links" onClick={() => setToggleMenu(false)}>WeddingStories</NavLink>
-              <NavLink to="/portfolio" className="links" onClick={() => setToggleMenu(false)}>Portfolio</NavLink>
-              <NavLink to="/contact" className="links" onClick={() => setToggleMenu(false)}>Contact</NavLink>
-              <NavLink to="/about" className="links" onClick={() => setToggleMenu(false)}>About</NavLink>
+              <NavLink to="/weddingstories" className="links" onClick={() => setToggleMenu(false)}>Portfolio</NavLink>
               <NavLink to="/products" className="links" onClick={() => setToggleMenu(false)}>Products</NavLink>
             </ul>
           </div>

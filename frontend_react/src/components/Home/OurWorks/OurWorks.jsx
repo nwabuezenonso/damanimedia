@@ -2,7 +2,6 @@ import React, { useState, useEffect} from 'react';
 import './OurWorks.css';
 import Masonry from 'react-masonry-css';
 // import { motion } from 'framer-motion';
-import { SubHeading } from '../../../miniComponent';
 import { urlFor, client } from '../../../client';
 
 const OurWorks = () => {
@@ -12,7 +11,6 @@ const OurWorks = () => {
         700: 2,
         500: 1
     };
-
 
     const [works, setWorks] = useState([]);
     const [filterWork, setFilterWork] = useState([]);
@@ -42,16 +40,15 @@ const OurWorks = () => {
 
   return (
     <div className='ourWork'>
-        <h1 className="app__header-h1"><span style={{fontWeight: "400"}}> our</span> Works 
-        </h1>
+        <h1 className="app__header-h1"><span style={{fontWeight: "400"}}> our</span> Works </h1>
         <div className="app__work-filter">
             {['Portrait', 'Wedding', 'Engagement', 'LifeStyle' , 'All'].map((item, index) => (
             <div
-                key={index}
-                onClick={() => handleWorkFilter(item)}
-                className={`app__work-filter-item app__flex p-text  'item-active' : ''}`}
+              key={index}
+              onClick={() => handleWorkFilter(item)}
+              className={`app__work-filter-item app__flex p-text  'item-active' : ''}`}
             >
-                {item}
+              {item}
             </div>
             ))}
         </div>
@@ -61,7 +58,7 @@ const OurWorks = () => {
             columnClassName="my-masonry-grid_column"
         >
           {filterWork.map((filter, index) => (
-                <img src={urlFor(filter.imgUrl)} key={index} className= "imgWidth"  alt={filter.title} />
+            <img src={urlFor(filter.imgUrl)} key={index} className= "imgWidth"  alt={filter.title} />
           ))}
       </Masonry>
     </div>

@@ -1,0 +1,28 @@
+.Testimonials{
+    margin: 5rem 0 5rem 0;
+    background-image: url('../../../assets/portfolioheader.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center -150px;
+    height: 100vh;
+    filter: grayscale(100%);
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+}
+
+.testimonials_text{
+    color: #fff;
+    padding-top: 10rem;
+    text-align: center;
+}
+
+.testimonials_text h2{
+    font-family: var(--font-base);
+    font-size: 80px;
+}
+
+.testimonials_text p{
+    font-family: var(--font-base);
+    /* width: 50%; */
+    text-align: center;
+    margin: 2rem 5rem 0 5rem;
+}
