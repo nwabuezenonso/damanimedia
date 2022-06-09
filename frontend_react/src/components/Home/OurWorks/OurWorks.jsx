@@ -1,7 +1,7 @@
 import React, { useState, useEffect} from 'react';
 import './OurWorks.css';
 import Masonry from 'react-masonry-css';
-// import { motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { urlFor, client } from '../../../client';
 
 const OurWorks = () => {
@@ -14,6 +14,7 @@ const OurWorks = () => {
 
     const [works, setWorks] = useState([]);
     const [filterWork, setFilterWork] = useState([]);
+    const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
   
     useEffect(() => {
       // create a query
@@ -28,8 +29,11 @@ const OurWorks = () => {
 
     const handleWorkFilter = (item) => {
         // settimout to trigger animation
+          // for animate
+          setAnimateCard([{ y: 100, opacity: 0 }]);
         setTimeout(() => {
           // conditional state
+          setAnimateCard([{ y: 0, opacity: 1 }]);
           if (item === 'All') {
             setFilterWork(works);
           } else {
@@ -40,7 +44,7 @@ const OurWorks = () => {
 
   return (
     <div className='ourWork'>
-        <h1 className="app__header-h1"><span style={{fontWeight: "400"}}> our</span> Works </h1>
+        {/* <h1 className="app__header-h1"><span style={{fontWeight: "400"}}> our</span> Works </h1> */}
         <div className="app__work-filter">
             {['Portrait', 'Wedding', 'Engagement', 'LifeStyle' , 'All'].map((item, index) => (
             <div
@@ -52,15 +56,20 @@ const OurWorks = () => {
             </div>
             ))}
         </div>
+        <motion.div
+            animate={animateCard}
+            transition={{ duration: 0.5, delayChildren: 0.5 }}
+        >
         <Masonry
-            breakpointCols={breakpointColumnsObj}
-            className="my-masonry-grid"
-            columnClassName="my-masonry-grid_column"
+          breakpointCols={breakpointColumnsObj}
+          className="my-masonry-grid"
+          columnClassName="my-masonry-grid_column"
         >
           {filterWork.map((filter, index) => (
             <img src={urlFor(filter.imgUrl)} key={index} className= "imgWidth"  alt={filter.title} />
           ))}
       </Masonry>
+        </motion.div>
     </div>
   )
 }

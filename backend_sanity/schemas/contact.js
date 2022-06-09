@@ -14,26 +14,6 @@ export default {
             type:'string'
         },
         {
-            name:'eventtype',
-            title:'Type of Event',
-            type:'string'
-        },
-        {
-            name:'eventdate',
-            title:'Date of Event',
-            type:'string'
-        },
-        {
-            name:'eventvenue',
-            title:'Venue of Event',
-            type:'string'
-        },
-        {
-            name:'budget',
-            title:'What is your budget?',
-            type:'string'
-        },
-        {
             name:'message',
             title:'Any thing you will like us to add?',
             type:'text'

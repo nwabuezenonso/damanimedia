@@ -22,7 +22,7 @@
     flex-direction: row;
 
     background: #F6F6F6;
-    padding: 4rem 0 4rem 6rem;
+    padding: 4rem 0 4rem 4rem;
 }
 
 .app__gallery-content {
@@ -33,10 +33,9 @@
     flex-direction: column;
 
     min-width: 500px;
-    padding-right: 2rem;
+    padding-right: 3rem;
+    text-align: justify;
 }
-
-
 
 .app__gallery-content button {
     margin-top: 1rem;
@@ -46,7 +45,7 @@
     flex: 1;
     display: flex;
     flex-direction: row;
-    max-width: 50%;
+    max-width: 52%;
     position: relative;
 }
 
@@ -78,9 +77,9 @@
     transition: .5s ease;
     cursor: pointer;
 }
-.icons{
+/* .icons{
    margin: 5px;
-}
+} */
 
 .icons svg{
     font-size: 18px;
@@ -110,7 +109,6 @@
     object-fit: cover;
     opacity: 1;
     transition: .5s ease;
-    filter: grayscale(100%);
 }
 
 .app__gallery-images_card:hover img {
@@ -191,3 +189,33 @@
         height: 320px;
     }
 }
+
+
+
+
+.section-b .social-icons{
+    position: relative;
+    top: 50px;
+    /* bottom: 36px; */
+    display: flex;
+    }
+    
+    .section-b .social-icons span{
+      flex-grow: 1;
+      padding-bottom: 10px;
+      
+    }
+    
+    .section-b .social-icons span a{
+      text-decoration: none;
+      font-size: 20px;
+      color: #212947;
+    }
+    
+    .section-b .social-icons span:nth-child(1){
+      border-bottom: 2px solid  #212947;
+    }
+    
+    .section-b .social-icons span:nth-child(2){
+      border-bottom: 2px solid  #1797e3;
+    }

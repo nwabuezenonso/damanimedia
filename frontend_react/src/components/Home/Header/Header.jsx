@@ -7,7 +7,7 @@ const Header = () => {
   return (
   <div  className="app__header app__wrapper" id="home">
     <div className="app__wrapper_info">
-      <h1 className="app__header-h1"><span style={{fontWeight: "400"}}>Capture</span> <br/>Every Moment
+      <h1 className="app__header-p" style={{fontSize: "60px", color: "#000",lineHeight: "67px",paddingBottom: "0px", paddingTop: "139px"}}><span style={{fontWeight: "600"}}>Capture</span> <br/>Every Moment
       </h1>
       <p className="app__header-p" style={{ margin: '2rem 0' }}>We are a team of photographers who push the boundaries by changing the way Nigerian weddings have traditionally been photographed. Our goal is to craft beautiful images that are just as unique as the people in the photographs.<br/>
         <button style={{marginTop: "1rem", color: "#000"}} type="button" className="custom__button">

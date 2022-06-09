@@ -4,12 +4,12 @@
     height: 100vh;
 }
 
-#header{
+/* #header{
     background-image: url('../../../assets/headermain2.jpg');
     background-size: cover;
     height: 100vh;
     background-repeat: no-repeat;
-}
+} */
 
 .app__header{
     padding: 10px;
@@ -23,7 +23,6 @@
     text-transform: capitalize;
     line-height: 70px;
     font-size: 70px;
-    padding-left: 4rem
 }
 
 .app__header-p{
@@ -31,9 +30,8 @@
     color: var(--secondary-color);
     font-weight: 400;
     text-transform: capitalize;
-    font-size: 16px;
-    padding: 2rem 4rem;
-    text-align: justify;
+    font-size: 15px;
+    padding: 0 4rem;
 }
 
 

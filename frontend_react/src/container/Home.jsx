@@ -2,7 +2,7 @@ import React from 'react';
 
 // ,FeaturedPost, Intro ,Testimonial, Featured
 
-import  { Header, About, OurWorks, Teams, Testimonials, Contact }  from '../components/Home';
+import  { Header, About, OurWorks, Teams, Testimonials, Footer }  from '../components/Home';
 
 
 const Home = () => {
@@ -13,7 +13,7 @@ const Home = () => {
       <OurWorks/>
       <Testimonials />
       <Teams />
-      <Contact />
+      <Footer />
     </div>
   )
 }

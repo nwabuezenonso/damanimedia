@@ -1,6 +1,7 @@
 import React, { useState, useEffect} from 'react'
 import './Teams.css';
 import { SubHeading } from '../../../miniComponent';
+import { motion } from 'framer-motion';
 import { urlFor, client } from '../../../client';
 
 const Teams = () => {
@@ -18,37 +19,22 @@ const Teams = () => {
 
   return (
     <>
-      <div className='ourTeam'>
-        <div className='ourWorkTitle'>
-        <h1 className="app__header-h1"><span style={{fontWeight: "400"}}> our</span> Team 
-        </h1>
-        </div>
-      </div>
-      <div
+      <h2 className='teamsHeader' style={{textAlign: "center"}}>Our Teams</h2>
+      <motion.div
         className="app__work-portfolio"
       >
-      {Teams.map((work, index) => (
-        <div className="app__work-item app__flex" key={index}>
-          <div
-            className="app__work-img app__flex"
-          >
-            <img src={urlFor(work.imgUrl)} alt={work.name} />
-
-          </div>
-
-          <div className="app__work-content app__flex">
-            {/* <h4 className="team_name">{work.name}</h4> */}
-            <p className="desc" style={{ marginTop: 10 }}>{work.desc}</p>
-
-            <div className="app__work-tag app__flex">
-              <p className="team_name">{work.name}</p>
+        {Teams.map((work, index) => (
+          <div className="app__work-item app__flex" key={index}>
+            <div
+              className="app__work-img app__flex"
+            >
+              <img src={urlFor(work.imgUrl)} alt={work.name} />
+              
             </div>
+            <p>{work.name}<br/>{work.desc}</p>
           </div>
-        </div>
-      ))}
-      
-      </div>
-
+        ))}
+      </motion.div>
     </>
   )
 }

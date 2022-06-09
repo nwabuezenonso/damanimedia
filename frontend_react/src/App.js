@@ -13,15 +13,10 @@ function App() {
         <Route path="/" element={<Home /> }/>
         <Route path="/weddingstories" element={<WeddingStories /> }/>
         <Route path="/weddingstories/:id" element={<WeddingStoriesDetails /> }/>
-        <Route path="/portfolio" element={<Portfolio /> }/>
-        <Route path="/about/:id" element={<AboutDetail /> }/>
-        <Route path="/contact" element={<AboutDetail /> }/>
         <Route path="/products" element={<Product /> }/>
         <Route path="/products/:id" element={<ProductDetail /> }/>
         <Route path="/checkout" element={<Checkout /> }/>
-        <Route path="/contact" element={<ContactMe /> }/>
       </Routes>
-      < Footer />
     </div>
   );
 }

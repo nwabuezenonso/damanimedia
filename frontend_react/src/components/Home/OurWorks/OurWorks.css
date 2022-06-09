@@ -7,25 +7,8 @@
     text-align: center;
 }
 
-.ourWork h1{
-    margin: 4rem 0 4rem 0;
-}
-
 .ourWorkTitle p span{
     font-weight: 600;
-}
-
-.ourWork_btn{
-    border-top:  none;
-    border-left: none;
-    border-right: none;
-    background: none;
-    cursor: pointer;
-}
-
-.ourWork_btn:hover{
-    border-bottom:2px solid #ff6961;
-    transition: .5s;
 }
 
 .ourWorkTitle div{
@@ -40,8 +23,8 @@
     display: -webkit-box; 
     display: -ms-flexbox; 
     display: flex;
-    flex-direction: row;
     width: auto;
+    padding: 0 4rem 0 4rem;
   }
 
   .my-masonry-grid_column img{
@@ -83,19 +66,21 @@
     font-family: var(--font-base);
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     flex-wrap: wrap;
+    padding: 0.5rem 4rem;
 }
 .app__work-filter .app__work-filter-item {
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
-    /* background-color: var(--black-color); */
-    color: var(--black-color);
-    font-weight: 800;
+    background-color: var(--primary-color);
+    color: #fff;
+    font-weight: 400;
     cursor: pointer;
     transition: all 0.3s ease;
     margin: 0.5rem;
+    font-size: 12px;
 }
 .app__work-filter .app__work-filter-item:hover {
     background-color: #000;
@@ -112,6 +97,11 @@
     color: #fff;
 }
 
+.teamImg{
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}
 
 #container {
     display: flex;
@@ -132,11 +122,5 @@
     
     padding: 2rem 3rem;
     margin: 2rem 1rem;
-  }
-
-  .work{
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
   

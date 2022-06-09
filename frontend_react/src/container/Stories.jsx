@@ -7,7 +7,6 @@ const PortfolioPage = () => {
   return (
    <div className='portfolio_style'>
      <Stories />
-     <Footer />
    </div>
   )
 }

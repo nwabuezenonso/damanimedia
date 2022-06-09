@@ -20,8 +20,13 @@ import logowhite from '../assets/logowhite.png'
 import bgImg from '../assets/bgIMG.png'
 import bgWhite from '../assets/bgWhite.png'
 
+import mobile from '../assets/mobile.png'
+import email from '../assets/email.png'
+
 
 const imgassets = {
+    email,
+    mobile,
     headermain,
     header01,
     bgImg,
