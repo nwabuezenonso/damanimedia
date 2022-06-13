@@ -20,7 +20,7 @@ const Stories = () => {
   return (
     <>
     <div className='portfolio_bg_img' />
-    <h2 className="head-text">Wedding Stories</h2>
+    <h2 style={{ color: "#000", fontSize: "32px"}} className="head-text">Wedding Stories</h2>
 
     {/* motion div data */}
     <motion.div className="app__work-portfolio">

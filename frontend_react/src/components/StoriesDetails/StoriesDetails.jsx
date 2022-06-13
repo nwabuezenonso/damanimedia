@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import Masonry from 'react-masonry-css';
 import { motion } from 'framer-motion';
 
@@ -16,29 +16,18 @@ const Stories = () => {
   } ;
   const { id } = useParams()
   const [selectedStory, setSelectedStory] = useState([]);
-  const [SingleQuery, setSingleQuery] =  useState([]);
   useEffect(() => {
     const query = `*[_type == "weddingstoriesdetails" && tags == '${id}']`; //fetch the first data
-    const singleQuery = `*[_type == "weddingstoriesdetails" && tags == '${id}'][0]`; //fetch the first data
 
     client.fetch(query).then((data) => {
       setSelectedStory(data)
     }); 
 
-    client.fetch(singleQuery).then((data) => {
-      setSingleQuery(data)
-    }); 
-
-    console.log(selectedStory)
-    console.log(id)
   }, [id]);
-
   return (
     <>
     <div className='div_block'>
-        {SingleQuery.map((data, index) => (
-          <img src={urlFor(data.imgUrl)} key={index} className= "imgWidth"  alt={data.name} />
-        ))}
+   
     </div>
     <div className='storiesTitle'>
       <h2 className='headtext__cormorant'>Wedding Story</h2>
@@ -53,6 +42,10 @@ const Stories = () => {
             <img src={urlFor(filter.imgUrl)} key={index} className= "imgWidth"  alt={filter.name} />
           ))}
     </Masonry>
+
+    <Link className="PreviousLink" to="/weddingstories">
+      Go to previous page
+    </Link>
     </>
   );
 };

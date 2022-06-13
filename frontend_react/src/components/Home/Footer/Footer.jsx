@@ -24,7 +24,7 @@ const Footer = () => {
     // following the sanity
     const contact = {
       _type: 'contact',
-      name: formData.username,
+      name: formData.name,
       email: formData.email,
       message: formData.message,
     };
@@ -46,11 +46,9 @@ const Footer = () => {
 
         <div className="app__footer-cards">
           <div className="app__footer-card ">
-            <img src={images.email} alt="email" />
-            <a href="mailto:hello@micael.com" className="p-text">hello@micael.com</a>
+            <a href="mailto:hello@micael.com" className="p-text">hello@damanimedia.com</a>
           </div>
           <div className="app__footer-card">
-            <img src={images.mobile} alt="phone" />
             <a href="tel:+1 (123) 456-7890" className="p-text">+1 (123) 456-7890</a>
           </div>
         </div>
