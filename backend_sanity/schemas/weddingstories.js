@@ -21,5 +21,10 @@ export default {
         title: 'Tags',
         type:'string'
       },
+      {
+        name: 'text',
+        title: 'Text',
+        type:'string'
+      },
     ],
   };

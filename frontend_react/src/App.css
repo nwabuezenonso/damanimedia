@@ -50,17 +50,70 @@
   width: 80%;
 }
 
-.custom__button {
-  border: none;
-  background: none;
-  color: var(--white-color);
-  font-family: var(--font-base);
-  font-weight: 400;
-  letter-spacing: 0.04em;
-  line-height: 28px;
-  font-size: 25px;
-  outline: none;
+
+/* line 451, C:/Users/HP/Desktop/Augst-HTML/297.Photography/Agriculture_Template/assets/scss/_common.scss */
+.custom__button{
+  color: #071112;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 0px;
+  text-transform: normal;
+  padding: 12px 35px;
+  -moz-user-select: none;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+  position: relative;
+  transition: color 0.4s linear;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  border: 1px solid #DBDBDB;
 }
+
+/* line 472, C:/Users/HP/Desktop/Augst-HTML/297.Photography/Agriculture_Template/assets/scss/_common.scss */
+.custom__button::before {
+  border: 1px solid transparent;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 101%;
+  height: 101%;
+  background: #071112;
+  z-index: -1;
+  transition: transform 0.5s;
+  transition-timing-function: ease;
+  transform-origin: 0 0;
+  transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+  transform: scaleY(0);
+  border-radius: 0;
+}
+
+/* line 490, C:/Users/HP/Desktop/Augst-HTML/297.Photography/Agriculture_Template/assets/scss/_common.scss */
+.custom__buttoni {
+  padding-right: 11px;
+}
+
+/* line 493, C:/Users/HP/Desktop/Augst-HTML/297.Photography/Agriculture_Template/assets/scss/_common.scss */
+.custom__button.custom__button2 {
+  color: #fff !important;
+  background: #071112;
+}
+
+/* line 499, C:/Users/HP/Desktop/Augst-HTML/297.Photography/Agriculture_Template/assets/scss/_common.scss */
+.custom__button:hover::before {
+  transform: scaleY(1);
+  border: 1px solid transparent;
+}
+
+/* line 503, C:/Users/HP/Desktop/Augst-HTML/297.Photography/Agriculture_Template/assets/scss/_common.scss */
+.custom__button:hover {
+  color: #fff !important;
+}
+
 
 .custom__button:hover{
   cursor: pointer;

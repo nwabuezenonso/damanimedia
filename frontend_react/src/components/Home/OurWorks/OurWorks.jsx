@@ -57,13 +57,14 @@ const OurWorks = () => {
             ))}
         </div>
         <motion.div
-            animate={animateCard}
-            transition={{ duration: 0.5, delayChildren: 0.5 }}
+          animate={animateCard}
+          transition={{ duration: 0.5, delayChildren: 0.5 }}
         >
         <Masonry
           breakpointCols={breakpointColumnsObj}
           className="my-masonry-grid"
           columnClassName="my-masonry-grid_column"
+          
         >
           {filterWork.map((filter, index) => (
             <img src={urlFor(filter.imgUrl)} key={index} className= "imgWidth"  alt={filter.title} />

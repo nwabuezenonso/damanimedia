@@ -7,6 +7,7 @@ import header07 from '../assets/header07.jpg';
 import header08 from '../assets/header08.jpg';
 import header09 from '../assets/header09.jpg';
 import header11 from '../assets/heading11.jpg';
+import header20 from '../assets/header20.jpg'
 import quote from '../assets/quote.png';
 import headermain from '../assets/headermain2.jpg';
 import about from '../assets/About.jpg';
@@ -28,6 +29,7 @@ const imgassets = {
     email,
     mobile,
     headermain,
+    header20,
     header01,
     bgImg,
     bgWhite,

@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
-
-import { images } from '../../../constant';
+import { FaWhatsapp, FaMailBulk  } from 'react-icons/fa';
 import { client } from '../../../client';
 import './Footer.css';
-import { Contact } from '../../Contact';
 
 const Footer = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
@@ -42,13 +40,19 @@ const Footer = () => {
 
       <div className='footer'>
 
-        <h2 className="head-text">Take a coffee & chat with me</h2>
+        <h2 className="head-text">Chat with me</h2>
 
         <div className="app__footer-cards">
           <div className="app__footer-card ">
+            <div style={{margin:"10px"}}>
+              <FaMailBulk />
+            </div>
             <a href="mailto:hello@micael.com" className="p-text">hello@damanimedia.com</a>
           </div>
           <div className="app__footer-card">
+          <div style={{margin:"10px"}}>
+              <FaWhatsapp />
+            </div>
             <a href="tel:+1 (123) 456-7890" className="p-text">+1 (123) 456-7890</a>
           </div>
         </div>
@@ -78,6 +82,11 @@ const Footer = () => {
             </h3>
           </div>
         )}
+
+
+        <div style={{textAlign: "center", color: "#fff", fontFamily: "var(--font-base)", padding: "10px"}}>
+          <p>Copyright ©2022 All rights reserved</p>
+        </div>
 
       </div>
     </>

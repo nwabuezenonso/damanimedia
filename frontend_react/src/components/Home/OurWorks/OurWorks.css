@@ -25,12 +25,18 @@
     display: flex;
     width: auto;
     padding: 0 4rem 0 4rem;
-  }
+}
 
-  .my-masonry-grid_column img{
+.my-masonry-grid_column img{
     width: 99%;
-  }
-  
+}
+
+.imgWidth:hover{
+    width: 130%;
+    position: relative;
+    transition: 0.5s ease-in-out;
+}
+
 
 
 @media screen and (max-width: 850px) {

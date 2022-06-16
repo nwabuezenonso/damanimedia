@@ -81,6 +81,35 @@
     color: #868686;
 }
 
+
+.app__navbar-links {
+    flex: 1;
+    display: flex;
+    justify-content: left;
+    margin-left: 25%;
+    align-items: center;
+
+    list-style: none;
+}
+
+.app__navbar-smallscreen {
+    display: none;
+}
+
+.linkText{
+    font-family: var(--font-base);
+}
+
+.app__navbar-links li {
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+.app__navbar-links li:hover {
+    color: var(--color-grey);
+}
+
+
 /* larger screens */
 @media screen and (min-width: 2000px) {
     .app__navbar-logo img {

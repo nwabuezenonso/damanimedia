@@ -1,11 +1,9 @@
 import React, {useState, useEffect} from 'react';
 import { useParams, Link } from 'react-router-dom';
 import Masonry from 'react-masonry-css';
-import { motion } from 'framer-motion';
 
 import { urlFor, client } from '../../client';
 import './StoriesDetails.css';
-import { images } from '../../constant';
 
 const Stories = () => {
   const breakpointColumnsObj = {

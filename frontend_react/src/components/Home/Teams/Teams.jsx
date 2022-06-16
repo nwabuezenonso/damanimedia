@@ -1,6 +1,5 @@
 import React, { useState, useEffect} from 'react'
 import './Teams.css';
-import { SubHeading } from '../../../miniComponent';
 import { motion } from 'framer-motion';
 import { urlFor, client } from '../../../client';
 
