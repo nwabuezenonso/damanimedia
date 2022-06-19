@@ -15,7 +15,7 @@ const Navbar = () => {
       <ul className="app__navbar-links">
         <li className="linkText"><a href="/">Home</a></li>
         <li className="linkText"><a href="/weddingstories">Wedding Stories</a></li>
-        <li className="linkText"><a href="https://damanimedia.vercel.app/">Store</a></li>
+        <li className="linkText"><a target="_blank"  rel='noreferrer' href="https://paystack.shop/damanimedia">Store</a></li>
       </ul>
       <div className="app__navbar-smallscreen">
         <GiHamburgerMenu fontSize={27} onClick={() => setToggleMenu(true)} />
@@ -25,7 +25,7 @@ const Navbar = () => {
             <ul className="app__navbar-smallscreen_links">
               <NavLink to="/" className="links" onClick={() => setToggleMenu(false)}>Home</NavLink>
               <NavLink to="/weddingstories" className="links" onClick={() => setToggleMenu(false)}>WeddingStories</NavLink>
-              <a href="https://damanimedia.vercel.app/" className="links" onClick={() => setToggleMenu(false)}>Products</a>
+              <a href="https://paystack.shop/damanimedia" className="links" onClick={() => setToggleMenu(false)}>Products</a>
             </ul>
           </div>
         )}

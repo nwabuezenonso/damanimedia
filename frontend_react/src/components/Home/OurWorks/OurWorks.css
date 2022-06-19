@@ -32,8 +32,9 @@
 }
 
 .imgWidth:hover{
-    width: 130%;
+    /* width: 130%; */
     position: relative;
+    transform: scale(1.5);
     transition: 0.5s ease-in-out;
 }
 
@@ -47,6 +48,11 @@
 
     .ourWorkTitle{
         padding: 1rem;
+    }
+
+    .ourWork{
+        height: 100rem;
+        overflow-y: hidden;
     }
     
 }

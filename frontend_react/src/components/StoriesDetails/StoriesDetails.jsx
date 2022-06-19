@@ -32,13 +32,13 @@ const Stories = () => {
       <h3 className="headtext__cormorant">{id}</h3>
     </div>
     <Masonry
-          breakpointCols={breakpointColumnsObj}
-          className="my-masonry-grid"
-          columnClassName="my-masonry-grid_column"
-        >
-          {selectedStory.map((filter, index) => (
-            <img src={urlFor(filter.imgUrl)} key={index} className= "imgWidth"  alt={filter.name} />
-          ))}
+      breakpointCols={breakpointColumnsObj}
+      className="my-masonry-grid"
+      columnClassName="my-masonry-grid_column"
+    >
+      {selectedStory.map((filter, index) => (
+        <img src={urlFor(filter.imgUrl)} key={index} className= "imgWidth"  alt={filter.name} />
+      ))}
     </Masonry>
 
     <Link className="PreviousLink" to="/weddingstories">
