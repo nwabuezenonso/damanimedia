@@ -5,7 +5,6 @@ import { Navbar} from './miniComponent'
 import BarLoader from "react-spinners/BarLoader";
 import './App.css'
 
-
 function App() {
   const [ loading, setLoading ] = useState(false)
 
@@ -15,6 +14,7 @@ function App() {
       setLoading(false)
     ), 2000)
   }, [])
+
   return (
     <div className="App">
       {
