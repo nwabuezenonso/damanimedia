@@ -102,6 +102,12 @@
     font-size: 20px;
 }
 
+.app__navbar-links a{
+    font-family: var(--font-base);
+    font-weight: normal;
+    font-size: 20px;
+}
+
 .app__navbar-links li {
     margin: 0 1rem;
     cursor: pointer;

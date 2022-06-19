@@ -13,9 +13,9 @@ const Navbar = () => {
         <img src={images.logo} alt="app__logo" />
       </div>
       <ul className="app__navbar-links">
-        <li className="linkText"><a href="/">Home</a></li>
-        <li className="linkText"><a href="/weddingstories">Wedding Stories</a></li>
-        <li className="linkText"><a target="_blank"  rel='noreferrer' href="https://paystack.shop/damanimedia">Store</a></li>
+        <NavLink to="/"><li className="linkText">Home</li></NavLink>
+        <NavLink to="/weddingstories"><li className="linkText"><a href="/weddingstories">Wedding Stories</a></li></NavLink>
+        <a  target="_blank"  rel='noreferrer' href="https://paystack.shop/damanimedia">Store</a>
       </ul>
       <div className="app__navbar-smallscreen">
         <GiHamburgerMenu fontSize={27} onClick={() => setToggleMenu(true)} />
