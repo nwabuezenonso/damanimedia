@@ -4,6 +4,16 @@
   align-items: center;
 }
 
+.loader {
+  text-align: center;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
 .section__padding {
   padding: 2rem 4rem;
 } 
