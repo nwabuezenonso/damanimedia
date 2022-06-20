@@ -25,7 +25,7 @@ const Navbar = () => {
             <ul className="app__navbar-smallscreen_links">
               <NavLink to="/" className="links" onClick={() => setToggleMenu(false)}>Home</NavLink>
               <NavLink to="/weddingstories" className="links" onClick={() => setToggleMenu(false)}>WeddingStories</NavLink>
-              <a href="https://paystack.shop/damanimedia" className="links" onClick={() => setToggleMenu(false)}>Products</a>
+              <a  target="_blank" rel='noreferrer' href="https://paystack.shop/damanimedia" className="links" onClick={() => setToggleMenu(false)}>Products</a>
             </ul>
           </div>
         )}

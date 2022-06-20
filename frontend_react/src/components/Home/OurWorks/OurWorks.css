@@ -51,8 +51,8 @@
     }
 
     .ourWork{
-        height: 100rem;
-        overflow-y: hidden;
+        height: 200rem;
+        overflow-y: scroll;
     }
     
 }
