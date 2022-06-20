@@ -30,7 +30,7 @@ const Stories = () => {
               <img src={urlFor(filter.imgUrl)}  alt={filter.title} />
               <motion.div className="app__work-hover app__flex"></motion.div>
             </div>
-            <p style={{ margin: "0", padding: "0"}}>{filter.text}</p>
+            <p style={{ margin: "10px", padding: "10px"}}>{filter.text}</p>
            <Link to={`/weddingstories/${filter.tags}`}><p className='p__cormorant' style={{color: "#000", textDecoration: "underline"}}>{filter.title}</p></Link>
           </div>
         ))}

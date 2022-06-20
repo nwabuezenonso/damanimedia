@@ -28,7 +28,7 @@ const Stories = () => {
    
     </div>
     <div className='storiesTitle'>
-      <h2 className='headtext__cormorant'>Wedding Story</h2>
+      <h2 className='headtext__cormorant'>Wedding <br/> Story</h2>
       <h3 className="headtext__cormorant">{id}</h3>
     </div>
     <Masonry

@@ -119,6 +119,12 @@
         margin-top: 3rem;
    }
 }
+
+@media screen and (min-width: 800) {
+    .app__work-content h4 {
+        margin-top: 3rem;
+   }
+}
 .app__work-content .app__work-tag {
     position: absolute;
     padding: 0.5rem 1rem;
